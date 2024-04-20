@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>FluxUs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="left-panel">
+        <div id="selectionGrid" class="grid-container">
+        </div>
+
+        <div class="player-indicator">Current Player: <span id="currentPlayer">1</span></div>
+
+    </div>
+
+    <div class="right-panel">
+        <button type="button" onclick="drawPrompt()">DRAW PROMPT</button>
+        <br>
+        <p id="storyPrompt" style="font-size:30px"></p>
+
+        <h2>Create your five-act story here:</h2>
+
+        <div class="fluxus-act-container">
+            <div class="fluxus-act" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="fluxus-act" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="fluxus-act" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="fluxus-act" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <div class="fluxus-act" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+        </div>
+        <br>
+        <button type="button" id="submit" onclick="onSubmit()">SUBMIT</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
